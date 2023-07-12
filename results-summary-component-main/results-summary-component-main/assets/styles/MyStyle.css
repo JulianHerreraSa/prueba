@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+body{
+    font-family: 'Hanken Grotesk';
+    font-weight: 500;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 25px;
+    margin: 15% auto;
+    width: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.062), 0 8px 16px rgba(0, 0, 0, 0.055);
+    max-width: 1440px;
+
+}
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    padding: 15px 80px;
+}
+
+#containerresult {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 25px;
+    width: 50%;
+    padding: 25px 45px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    /* font-weight: 500,700,800; */
+}
+
+#resultdip1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 50px, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#summarydip {
+    align-self: flex-start;
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#idlblResult{
+    color: hsl(221, 100%, 96%);
+}
+#idlbl76{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.containerlable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+.containerlable > .values{
+    color: hsl(224, 30%, 27%);
+}
+
+.lable {
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+
+.lable > img{
+    margin-right: 7px;
+}
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.103);
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.103);
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.103);
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.103);
+    color: hsl(234, 85%, 45%);
+}
+
+
+.values {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: flex-end;
+}
+
+.valuesspan{
+    font-weight: 800;
+    margin-right: 10px;
+}
+#submit {
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    border-bottom: none;
+    color: white;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+#submit:hover{
+   background: hsl(224, 30%, 27%);
+}
+
+#spanScore {
+    text-align: center;
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 1150px) {
+    #container{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 870px) {
+    #container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 770px) {
+    #container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 670px) {
+        #container{
+            width: 90%;
+        }
+}
+@media screen and (max-width: 600px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 25px;
+        width: 100%;
+        margin: auto;
+    }
+    #containerresult{
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #summary{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 15px 30px
+    }
+    .containerlable {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .lable{
+        width: 100%;
+    }
+    .values{
+        width: 100%;
+    }
+
+}
