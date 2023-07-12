@@ -1,4 +1,4 @@
-console.log("ejecucion de script");
+//console.log("ejecucion de script");
 const imgReaction = document.querySelector("#Reaction");
 const imgMemory = document.querySelector("#Memory");
 const imgVerbal = document.querySelector("#Verbal");
@@ -9,6 +9,7 @@ const spanMemory = document.querySelector("#valMemory");
 const spanVerbal = document.querySelector("#valVerbal");
 const spanVisual = document.querySelector("#valVisual");
 cargarDatos();
+
 function cargarDatos(){
   fetch("./data.json")
   .then(respuesta => respuesta.json())
