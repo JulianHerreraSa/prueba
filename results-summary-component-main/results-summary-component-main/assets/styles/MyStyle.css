@@ -31,11 +31,20 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+
+}
+html{
+    height: 100%;
 }
 
 body{
     font-family: 'Hanken Grotesk';
     font-weight: 500;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #container {
@@ -43,11 +52,8 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     border-radius: 25px;
-    margin: 15% auto;
-    width: 50%;
+    width: 680px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.062), 0 8px 16px rgba(0, 0, 0, 0.055);
-    max-width: 1440px;
-
 }
 
 #summary {
@@ -175,7 +181,7 @@ body{
     padding: 0px 15px;
 }
 
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
     #container{
         width: 60%;
     }
@@ -199,28 +205,26 @@ body{
         #container{
             width: 90%;
         }
-}
-@media screen and (max-width: 600px) {
+} */
+@media screen and (max-width: 680px) {
     #container{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        border-radius: 25px;
+        border-radius: 0px;
         width: 100%;
-        margin: auto;
+        height: 100vh;
     }
     #containerresult{
         width: 100%;
         border-radius: 0px 0px 25px 25px;
         display: flex;
         flex-direction: column;
-        margin: auto;
     }
     #summary{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: auto;
         padding: 15px 30px
     }
     .containerlable {
