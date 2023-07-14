@@ -181,31 +181,6 @@ body{
     padding: 0px 15px;
 }
 
-/* @media screen and (max-width: 1150px) {
-    #container{
-        width: 60%;
-    }
-}
-@media screen and (max-width: 1000px) {
-    #container{
-        width: 70%;
-    }
-}
-@media screen and (max-width: 870px) {
-    #container{
-        width: 70%;
-    }
-}
-@media screen and (max-width: 770px) {
-    #container{
-        width: 80%;
-    }
-}
-@media screen and (max-width: 670px) {
-        #container{
-            width: 90%;
-        }
-} */
 @media screen and (max-width: 680px) {
     #container{
         display: flex;
