@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'Overpass-Regular';
+    src: url('../static/Overpass-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button, input[type="botton"], input[type="reset"] {
 	background: none;
 	color: inherit;
 	border: none;
@@ -10,8 +18,8 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-
 }
+
 html{
     height: 100%;
 }
@@ -25,6 +33,68 @@ body{
     align-items: center;
     justify-content: center;
 }
-.attribution { 
-    font-size: 11px; text-align: center; 
+.contenedor{
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 25px;
+    width: 680px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.062), 0 8px 16px rgba(0, 0, 0, 0.055);
+    padding: 25px;
 }
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    padding: 20px 0px 20px 0px
+}
+.titulo{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass-Regular';
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.texto{
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass-Regular';
+    font-weight: 400;
+    font-size: 15px;
+}
+.contenedorcirculos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.circulos{
+    background: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botton{
+    border-radius: 20px;
+    height: 40px;
+    width: 100%;
+    border-bottom: none;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+}
+.contenedorboton{
+    padding-top: 15px;
+}
+/* .attribution { 
+    font-size: 11px; text-align: center; 
+} */
